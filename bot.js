@@ -25,5 +25,22 @@ bot.hashtag('hash', (ctx) => {
    ctx.reply('HAshtag mentioned');
 });
 
+bot.use((ctx, next) => {
+   ctx.state.apple = 5;
+
+   ctx.reply('You used this peace of art.');
+   next();
+});
+
+bot.start((ctx) => {
+   bot.telegram.sendMessage(ctx.chat.id, 'Hello World!', {
+      parse_mode: 'Markdown',
+      disable_notification: true, ///Extra parameter object.
+   });
+   ctx.reply('Hello', {
+      parse_mode: 'Markdown',
+      disable_notification: true,
+   });
+});
 
 bot.launch();
