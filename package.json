@@ -1,11 +1,22 @@
 {
-  "name": "telegram-bots",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+   "name": "bots-joy",
+   "version": "1.0.0",
+   "description": "For different types of bots which can be made using NODE and some Frameworks, API's, etc.",
+   "main": "index.js",
+   "scripts": {
+      "start": "nodemon bot.js"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/ISHaNT-CHaHaR/BOTS-JOY.git"
+   },
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/ISHaNT-CHaHaR/BOTS-JOY/issues"
+   },
+   "homepage": "https://github.com/ISHaNT-CHaHaR/BOTS-JOY#readme",
+   "dependencies": {
+      "telegraf": "^3.37.0"
+   }
 }
